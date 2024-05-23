@@ -65,7 +65,7 @@
         console.log('🎫' + book);
     });
 
-    // map : 새로운 배열을 리턴
+    // map : 새로운 배열을 리턴 (리턴 받아줄 수신자가 필요하므로 return 코드를 써줘야함) -중요
 
     const newBooks = books.map(function(book) {
         return `🎄 ${book}`
@@ -76,6 +76,131 @@
     const newBooks2 = books.map(item => `${item} 🎨`)
     console.log(newBooks2);
 
+}
+
+// 3. 배열 method
+
+{
+    const books = ['html', 'css', 'javascript', 'jquery', 'react']
+
+    // 배열을 문자열로 만드는 방법
+    console.log(books.join(' ')); // '' 안에 넣은 문자열대로 배열해줌
+    console.log(books.reverse()); //반대순서로 해줌
+    console.log(books.sort()); //알파뱃 순으로 해줌
+
+    books.push('php')  //뒷쪽에 열을 하나 추가 해줌
+    console.log(books);
+
+    books.unshift('jsp') //앞쪽에 열을 하나 추가해줌
+    console.log(books);
+
+    books.pop()  //뒷 열 하나를 삭제
+    console.log(books);
+
+    books.shift() //앞 열 하나를 삭제
+    console.log(books);
+
+    //splice : 지정한 위치에서 삭제. 추가
+
+    books.splice(2, 1, '하하하', '호호호')  //내가 지정한 위치의 열을 삭제하고  넣우주기
+    console.log(books);
+
     
+    //합치기
+    const Books2 = ['git', 'nodejs']
+    const newBooks = books.concat(Books2)
+    console.log(newBooks);
+
+    //원하는 구간만큼 잘라서 새로운 배열을 리턴
+    const anotherBooks = newBooks.slice(2, 4)
+    console.log(anotherBooks);
+
+    //배열안에 있는 것 검색
+
+    console.log(books);
+    console.log(books.indexOf('react'));
+    console.log(books.includes('css'));
+    console.log(books.includes('github'));
+}
+
+    //4. 활용
+    const sojus = [
+        { name: '대선', price: 1200, sale: true, score:86 },
+        { name: '좋은데이', price: 1100, sale: false, score:92},
+        { name: '진로', price: 1150, sale: true, score:80 },
+        { name: '금덕주', price: 960, sale: false, score:60 },
+        { name: '참이슬', price: 1250, sale: true, score:46 }
+    ]
+
+
+
+//score가 80인 소주를 찾기
+
+{
+    const result = sojus.find(soju => soju.score === 80)
+    console.log(result);
+}
+
+//판매중인 소주를 찾아서 새로운 배열로 만들기
+
+{
+    const result = sojus.filter(item => item.sale)
+    console.log(result);
+}
+
+//점수만 있는 새로운 배열 만들기
+
+{
+    const result = sojus.map(item => item.socre)
+    console.log(result);
+}
+
+//점수가 50보다 작은 소주가 있는지 확인
+{
+    const result = sojus.some(item => item.score < 50)
+    console.log(result); // 참 거짓인지만 확인
+
+    const result2 = sojus.find(item => item.score < 50)
+    console.log(result2); //종류 확인가능
 
 }
+
+//소주들의 평균가격 구하기
+
+{
+//     sojus.reduce((prev,current) => {
+//         // return 문
+//     }, 초기값)
+    
+    const result = sojus.reduce((prev, current) => {
+        return prev + current.price
+    }, 0)
+
+    console.log(result / sojus.length);
+
+}
+
+//점수를 문자로 만들기
+
+{
+    const result = sojus.map(item => item.score).join('-')
+    console.log(result);
+    
+}
+
+//점수가 낮은 순으로, 문자열 정리하기
+
+{
+    const result = sojus //
+    .map(item => item.score)
+    .sort((a ,b )=> a - b)
+    .join()
+    console.log(result);
+}
+
+
+
+
+
+
+
