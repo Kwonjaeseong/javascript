@@ -1,12 +1,12 @@
 // 대화상자 alert, prompt, confirm
-{
-    // const name = prompt('이름을 입력하세요', '영업팀');
-    // alert(`안녕하세요 ${name}님, 환영합니다.`)
-    // const ischeck = confirm('확인하였습니까?')
-    // console.log(ischeck)
-    // document.write(name)
+// {
+//     const name = prompt('이름을 입력하세요', '영업팀');
+//     alert(`안녕하세요 ${name}님, 환영합니다.`)
+//     const ischeck = confirm('확인하였습니까?')
+//     console.log(ischeck)
+//     document.write(name)
 
-}
+// }
 
 // variable 변수
 
@@ -17,34 +17,37 @@
 // 읽기, 쓰기 가능하다.
 // 블럭을 무시한다.
 
-{
-    var username = 'Alice'
-    console.log(username)
+// {
+//     var username = 'Alice'
+//     console.log(username)
 
-    username = 'Picasso'
-    console.log(username)
-}
+//     username = 'Picasso'
+//     console.log(username)
+// }
 
-console.log(username)
+// console.log(username)
 
 // 2. let
 // 읽기, 쓰기가 가능하다
 // 하지만 블럭을 무시하지 못한다.
-{
-    let title = 'html'
-    console.log(title)
+// {
+//     let title = 'html'
+//     console.log(title)
 
-    title = 'css'
-    console.log(title)
-}
+//     title = 'css'
+//     console.log(title)
+
+
+// }
 
 // console.log(title)
+
 
 // 3.const
 // 읽기만 가능하다. - 변하지 않는다.
 {
-    const subject = 'html'
-    console.log(subject)
+    // const subject = 'html'
+    // console.log(subject)
 
     // subject = 'css'
 
@@ -52,7 +55,7 @@ console.log(username)
 
 // 변수는 문자와 숫자, $와 _ 만 사용가능하다.
 // 첫글자 숫자는 사용불가
-// 예약어(미리 만들어져있는, 프로그래밍 됀 코드)는 사용불가
+// 예약어(미리 만들어져있는, 프로그래밍 된 코드)는 사용불가
 
 // 4. 변수의 데이터 타입 - 자료형
 // 원시데이타(premitive) : String, number, Boolean, null, undefined
@@ -63,18 +66,18 @@ console.log(username)
 ///.00 함수나 메서드에서 리턴할 수 있다.
 
 // 5. 문자형 String
-{
-    const name1 = 'Alice'
-    const name2 = 'Alice'
-    const name3 = 'Alice'
+// {
+//     const name1 = 'Alice'
+//     const name2 = 'Alice'
+//     const name3 = 'Alice'
 
-    const firstName = 'Pablo'
-    const lastName = 'Picaso'
-    const fullName = firstName + ' ' + lastName
-    console.log(fullName);
-    console.log(`${firstName} ${lastName}`)
+//     const firstName = 'Pablo'
+//     const lastName = 'Picaso'
+//     const fullName = firstName + ' ' + lastName
+//     console.log(fullName);
+//     console.log(`${firstName} ${lastName}`)
     
-}
+// }
 
 // 6. 숫자형 Number
 {
@@ -111,11 +114,11 @@ console.log(username)
 // undefined = 값이 할당되지 않음
 
 {
-    const box = null
-    console.log(`값은 ${box}이고, 타입은 ${typeof box}입니다.`)
+    // const box = null
+    // console.log(`값은 ${box}이고, 타입은 ${typeof box}입니다.`)
 
-    let box2
-    console.log(`값은 ${box2}이고, 타입은 ${typeof box2}입니다.`)
+    // let box2
+    // console.log(`값은 ${box2}이고, 타입은 ${typeof box2}입니다.`)
 
 
 }
@@ -125,14 +128,14 @@ console.log(username)
 //typescript
 
 {
-    let word = 'winter'
-    console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
-    word = 100
-    console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
-    word = '100' + 10
-    console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
-    word = '100' / 10
-    console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
+    // let word = 'winter'
+    // console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
+    // word = 100
+    // console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
+    // word = '100' + 10
+    // console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
+    // word = '100' / 10
+    // console.log(`값은 ${word}이고, 타입은 ${typeof word}`)
 }
 
 {   // 형변환
@@ -143,22 +146,22 @@ console.log(username)
 }
 // 문자열로 형변환
 { 
-    console.log(
-        String(1234),
-        String(true),
-        String(false),
-        String(null),
-        String(undefined)
-    );
+    // console.log(
+    //     String(1234),
+    //     String(true),
+    //     String(false),
+    //     String(null),
+    //     String(undefined)
+    // );
 
-    console.log(
-        Number('1234'),
-        Number('1234hello'),
-        Number(false),
-        Number(true),
-        Number(null),
-        Number(undefined)
-    );
+    // console.log(
+    //     Number('1234'),
+    //     Number('1234hello'),
+    //     Number(false),
+    //     Number(true),
+    //     Number(null),
+    //     Number(undefined)
+    // );
 
     console.log(
         Boolean(0),

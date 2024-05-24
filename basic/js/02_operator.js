@@ -11,17 +11,17 @@
 // }
 
 // // 2. 문자열 연결 연산자
-// {
-//     const say1 = 'winter'
-//     const say2 = 'is'
-//     const say3 = 'coming'
-//     console.log(say1 + say2 + say3);
-//     console.log(say1 + ' ' + say2 + ' ' + say3);
-//     console.log(`${say1} ${say2} ${say3}`);
-//     console.log('html' + 2);
-//     console.log('10' + 2);
+{
+    const say1 = 'winter'
+    const say2 = 'is'
+    const say3 = 'coming'
+    console.log(say1 + say2 + say3);
+    console.log(say1 + ' ' + say2 + ' ' + say3);
+    console.log(`${say1} ${say2} ${say3}`);
+    console.log('html' + 2);
+    console.log('10' + 2);
 
-// }
+}
 
 // // 3. 대입 연산자 아래로 읽어가면서 결과값이 계산 됌.
 // {
