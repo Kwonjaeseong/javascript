@@ -32,7 +32,7 @@ minus.addEventListener('click', function(){
 
 
 function paintTotal() {
-    totalPrice.textContent = (num * unitPrice).toLocaleString
+    totalPrice.textContent = (num * unitPrice).toLocaleString()
 }
 
 function init (){
